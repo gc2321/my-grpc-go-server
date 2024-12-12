@@ -12,11 +12,11 @@ import (
 )
 
 type GrpcAdapter struct {
-	helloService      port.HelloServicePort
-	bankService       port.BankServicePort
-	resiliencyService port.ResiliencyServicePort
-	grpcPort          int
-	server            *grpc.Server
+	helloService port.HelloServicePort
+	bankService  port.BankServicePort
+	//resiliencyService port.ResiliencyServicePort
+	grpcPort int
+	server   *grpc.Server
 	hello.HelloServiceServer
 	bank.BankServiceServer
 	//resl.ResiliencyServiceServer
